@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Labs — Intelligent Mobile Apps & Custom AI Engineering</title>
+    <meta name="description" content="MD Labs designs and engineers high-performance Flutter mobile applications integrated with bespoke, enterprise-grade AI systems. Turn manual processes into autonomous mobile solutions.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo-dark.png" alt="MD Labs Logo" id="logo-img" class="logo-image">
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#problem" class="nav-link">The Bottleneck</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#synergy" class="nav-link">AI + Flutter</a>
+                <a href="#cases" class="nav-link">Our Impact</a>
+                <a href="#faq" class="nav-link">FAQs</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <!-- Sun Icon (visible in dark theme) -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828 0l-.707-.707M17.657 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                    </svg>
+                    <!-- Moon Icon (visible in light theme) -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+                <a href="#contact" class="btn btn-primary nav-cta">Book a Call</a>
+                
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+                    <svg class="menu-open-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <canvas id="particle-canvas" class="hero-canvas"></canvas>
+        <div class="container hero-container">
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span>
+                <span class="badge-text">Next-Gen AI & Mobile Engineering</span>
+            </div>
+            
+            <h1 class="hero-title reveal">
+                We build <span class="text-gradient">AI-native Flutter apps</span> that run your business autonomously.
+            </h1>
+            
+            <p class="hero-subtitle reveal">
+                Stop building static mobile dashboards that sit idle. We engineer high-performance Flutter interfaces powered by custom intelligence systems—so your app anticipates user needs, automates back-office operations, and generates measurable pipeline.
+            </p>
+            
+            <div class="hero-actions reveal">
+                <a href="#contact" class="btn btn-primary btn-large">Book a Strategy Call</a>
+                <a href="#services" class="btn btn-secondary btn-large">Explore Services</a>
+            </div>
+
+            <div class="hero-trust reveal">
+                <p>Trusted by forward-thinking teams scaling intelligence on iOS, Android, and Web.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem (Bottleneck) Section -->
+    <section id="problem" class="problem-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">The Core Issue</span>
+                <h2>Why average mobile apps fail to move the revenue needle.</h2>
+                <p>Most development agencies build software that waits for users to drive it. That is one more task on your team's plate, not a multiplier.</p>
+            </div>
+
+            <div class="problem-grid">
+                <div class="problem-card reveal">
+                    <div class="card-icon error-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                        </svg>
+                    </div>
+                    <h3>The Dumb Dashboard</h3>
+                    <p>Traditional apps simply display data from static database tables. They force users to click, search, compile, and manually input information. The software is a filing cabinet, not an assistant.</p>
+                </div>
+
+                <div class="problem-card reveal">
+                    <div class="card-icon error-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h3>Sluggish Cross-Platform Builds</h3>
+                    <p>Non-optimized cross-platform frameworks deliver sluggish lag, unresponsive touch targets, and stuttering frame rates. If your app feels slow, users drop off instantly—and take your growth with them.</p>
+                </div>
+
+                <div class="problem-card reveal">
+                    <div class="card-icon error-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3>Isolated AI Experiments</h3>
+                    <p>Bolting on a generic ChatGPT wrapper and calling it "AI" is a recipe for failure. Without deep on-device integration, custom backend knowledge graphs, and offline capabilities, your AI is just a gimmick.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Bespoke Offerings</span>
+                <h2>Architecting the future of mobile interfaces and logic.</h2>
+                <p>We work at the intersection of high-fidelity client apps and robust cognitive compute backends. Here is what we engineer.</p>
+            </div>
+
+            <div class="services-wrapper">
+                <div class="service-block reveal">
+                    <div class="service-content">
+                        <div class="service-icon text-gradient-bg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3>Flutter App Development</h3>
+                        <p class="service-desc">We compile pixel-perfect, native-grade applications for iOS, Android, and Web from a single, optimized codebase. No shortcuts, just flawless user experiences.</p>
+                        <ul class="service-features">
+                            <li>
+                                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                Custom UI animations rendering at a locked 60/120fps.
+                            </li>
+                            <li>
+                                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                Offline-first local state storage (Hive, Isar, SQLite).
+                            </li>
+                            <li>
+                                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                Hardened security wrappers with biometric authentication.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-block reveal">
+                    <div class="service-content">
+                        <div class="service-icon text-gradient-bg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                        </div>
+                        <h3>Bespoke AI Engineering</h3>
+                        <p class="service-desc">We build, fine-tune, and integrate large language models and cognitive pipelines that live securely in your cloud infrastructure or directly on-device.</p>
+                        <ul class="service-features">
+                            <li>
+                                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                RAG (Retrieval-Augmented Generation) systems with vector databases.
+                            </li>
+                            <li>
+                                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                Autonomous AI agents that coordinate complex workflow actions.
+                            </li>
+                            <li>
+                                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                Low-latency audio transcripts and natural voice synthesis.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-block reveal">
+                    <div class="service-content">
+                        <div class="service-icon text-gradient-bg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3>The AI-Flutter Synergy</h3>
+                        <p class="service-desc">The magic happens when native client speed meets deep model compute. We orchestrate apps that react before they are clicked and think while they run.</p>
+                        <ul class="service-features">
+                            <li>
+                                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                On-device machine learning (TensorFlow Lite, ONNX) for zero latency.
+                            </li>
+                            <li>
+                                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                Intelligent conversational agents that navigate the app UI for the user.
+                            </li>
+                            <li>
+                                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                Context-aware personalization based on device sensor logs.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Synergy Showcase Section -->
+    <section id="synergy" class="synergy-section section bg-alt">
+        <div class="container">
+            <div class="synergy-wrapper">
+                <div class="synergy-text reveal">
+                    <span class="subtitle">Deep Integration</span>
+                    <h2>A seamless connection between native interfaces and cognitive servers.</h2>
+                    <p>We do not build wrappers. We build cohesive architectures where the client application acts as the sensory input (camera, location, voice) and the backend acts as the cortex. State is synced instantly, processes are executed asynchronously, and outcomes are immediate.</p>
+                    
+                    <div class="synergy-tabs">
+                        <div class="tab-item active" data-tab="tab-ui">
+                            <h4>Intelligent UI Routing</h4>
+                            <p>Our apps analyze user navigation and dynamically cache screens or pre-fetch background data to eliminate perceived loading times.</p>
+                        </div>
+                        <div class="tab-item" data-tab="tab-local">
+                            <h4>Local Cog-Compute</h4>
+                            <p>Run secure ML classifiers on-device. Perform speech-to-text, text classification, and route prediction without exposing data to external APIs.</p>
+                        </div>
+                        <div class="tab-item" data-tab="tab-agent">
+                            <h4>Mobile Agent Execution</h4>
+                            <p>Empower the app's internal logic to invoke background agents that query CRMs, dispatch email flows, and compile PDFs directly from a chat box.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="synergy-visual reveal">
+                    <div class="visual-container">
+                        <div class="visual-node client-node active" id="node-client">
+                            <span class="node-label">Flutter Client</span>
+                            <span class="node-sub">Native UI (iOS/Android)</span>
+                        </div>
+                        
+                        <div class="visual-beam" id="beam-flow"></div>
+                        
+                        <div class="visual-node server-node" id="node-server">
+                            <span class="node-label">AI Engine</span>
+                            <span class="node-sub">Cognitive Core</span>
+                        </div>
+
+                        <!-- Active details displayed here -->
+                        <div class="visual-details" id="visual-details-text">
+                            Dynamic routing active. Latency: <span class="accent-text">~12ms</span>. UI rendering locked at 120Hz.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">The Roadmap</span>
+                <h2>Four phases from strategy to production launch.</h2>
+                <p>We work in sprint-based architectures. Here is exactly how we take your app from concept to deployment.</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="timeline-step reveal">
+                    <div class="step-num">01</div>
+                    <div class="step-content">
+                        <h3>Strategy & Pipeline Audit</h3>
+                        <p>We analyze your business operations to find where manual overhead lies. We define the target user profile, map integration points, and formulate the exact AI-mobile architecture required.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step reveal">
+                    <div class="step-num">02</div>
+                    <div class="step-content">
+                        <h3>Pixel-Perfect Prototyping</h3>
+                        <p>Our designers deliver interactive wireframes mapping user routing. Simultaneously, our machine learning engineers compile mock datasets to validate the accuracy of the proposed model pipelines.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step reveal">
+                    <div class="step-num">03</div>
+                    <div class="step-content">
+                        <h3>High-Fidelity Engineering</h3>
+                        <p>We write clean, documented Dart code for the Flutter interface. We set up robust state management (Bloc/Riverpod), and wire the application to private cognitive endpoints using low-latency WebSockets.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step reveal">
+                    <div class="step-num">04</div>
+                    <div class="step-content">
+                        <h3>hardened Testing & Launch</h3>
+                        <p>We launch the application across Google Play Console and App Store Connect. Post-launch, we monitor token metrics, trace API latency logs, and iterate the client app to lock in user retention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Case Studies Section -->
+    <section id="cases" class="cases-section section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Our Track Record</span>
+                <h2>Real engineering. Quantified results.</h2>
+                <p>We build systems that reduce labor hours, scale revenue, and increase user engagement. Here are three custom implementations.</p>
+            </div>
+
+            <div class="cases-grid">
+                <div class="case-card reveal">
+                    <div class="case-metrics">
+                        <span class="metric-num">40%</span>
+                        <span class="metric-lbl">Reduction in Triage Load</span>
+                    </div>
+                    <h3>Aura Health Companion</h3>
+                    <p>A Flutter mobile wellness companion with speech emotion analysis. Custom on-device classifier flags critical cases instantly, directing them to human counselors while automating standard checks.</p>
+                    <div class="case-tags">
+                        <span class="tag">Flutter iOS/Android</span>
+                        <span class="tag">Audio NLP</span>
+                        <span class="tag">On-Device ML</span>
+                    </div>
+                </div>
+
+                <div class="case-card reveal">
+                    <div class="case-metrics">
+                        <span class="metric-num">1.5h</span>
+                        <span class="metric-lbl">Saved per Driver/Day</span>
+                    </div>
+                    <h3>LogiSmart Dispatch</h3>
+                    <p>Intelligent inventory tracking app. Uses predictive pathfinding algorithms and computer vision barcode scanning on-device to route deliveries and scan packages without manual input delays.</p>
+                    <div class="case-tags">
+                        <span class="tag">Flutter Web/Mobile</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Pathfinding AI</span>
+                    </div>
+                </div>
+
+                <div class="case-card reveal">
+                    <div class="case-metrics">
+                        <span class="metric-num">210%</span>
+                        <span class="metric-lbl">Increase in Engagement</span>
+                    </div>
+                    <h3>FinGPT Investor Hub</h3>
+                    <p>High-end investment tracking application with embedded cognitive advisory agents. Conversational AI analyzes stock portfolios to answer complex user questions with citations, boosting daily sessions.</p>
+                    <div class="case-tags">
+                        <span class="tag">Flutter Mobile</span>
+                        <span class="tag">GPT-4 RAG API</span>
+                        <span class="tag">Financial AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Common Concerns</span>
+                <h2>Objections and answers, answered straight.</h2>
+                <p>Everything you need to know about our engineering standards, timelines, and costs.</p>
+            </div>
+
+            <div class="faq-accordion">
+                <details class="faq-item reveal">
+                    <summary>Why use Flutter instead of native Swift or Kotlin?</summary>
+                    <div class="faq-answer">
+                        <p>Flutter allows us to write a single codebase that runs at native-performance on both iOS and Android. This cuts your engineering timeline and long-term maintenance costs by 50% without compromising on the UI fidelity or responsiveness. We write platform-channel code (Swift/Kotlin) for any device-specific hardware features, achieving the best of both worlds.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item reveal">
+                    <summary>How do you ensure enterprise data privacy and security?</summary>
+                    <div class="faq-answer">
+                        <p>We enforce strict security practices. All AI engines are deployed within your isolated cloud environment (AWS, GCP, or Azure VPC), ensuring that no user data is shared with public LLM training datasets. We encrypt data in transit via WebSockets/HTTPS and at rest using AES-256 local database wrappers. For highly sensitive operations, we use on-device execution models that require no network calls.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item reveal">
+                    <summary>How long does a standard build take to complete?</summary>
+                    <div class="faq-answer">
+                        <p>A typical high-fidelity MVP takes between 8 to 12 weeks from strategy mapping to App Store deployment. We break this down into 2-week agile sprints. You receive build files (via TestFlight and Google Play Internal Sharing) at the end of every sprint, ensuring absolute transparency throughout the project lifecycle.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item reveal">
+                    <summary>What happens after the application is launched?</summary>
+                    <div class="faq-answer">
+                        <p>We do not disappear post-launch. We provide custom maintenance packages that include monitoring LLM token costs, updating native OS dependencies, deploying minor feature refinements, and auditing model latency logs to ensure your applications stay fast and accurate.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Lead Form Section -->
+    <section id="contact" class="contact-section section bg-alt">
+        <div class="container contact-container">
+            <div class="contact-info reveal">
+                <span class="subtitle">Start a Conversation</span>
+                <h2>Let's build something intelligent.</h2>
+                <p>Book a discovery call, or drop us a message detailing your application project. We will map exactly what your architecture should look like—this map is yours to keep, whether we work together or not.</p>
+                
+                <div class="contact-methods">
+                    <a href="mailto:info@mdlabs.io" class="contact-method">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        info@mdlabs.io
+                    </a>
+                    <a href="tel:+447366435065" class="contact-method">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        +44 (7366) 435-065
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper reveal">
+                <form id="lead-form" class="lead-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="user-name">Your Name</label>
+                            <input type="text" id="user-name" name="name" required placeholder="e.g. Sarah Jenkins">
+                        </div>
+                        <div class="form-group">
+                            <label for="user-email">Email Address</label>
+                            <input type="email" id="user-email" name="email" required placeholder="e.g. sarah@company.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-type">Primary Requirement</label>
+                        <select id="project-type" name="type">
+                            <option value="flutter">Flutter App Development</option>
+                            <option value="ai">Bespoke AI Engineering</option>
+                            <option value="both">AI + Flutter Synergy (Both)</option>
+                            <option value="other">Other Software Engineering</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-desc">Project Overview & Timeline</label>
+                        <textarea id="project-desc" name="description" rows="4" required placeholder="Describe what you want to build and when you need it launched..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Submit Inquiry
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                    <div id="form-message" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/logo-dark.png" alt="MD Labs Logo" id="footer-logo" class="logo-image">
+                <p>We build production-grade interfaces and cognitive engines that allow teams to scale without adding headcount.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Services</h4>
+                <a href="#services">Flutter Development</a>
+                <a href="#services">Bespoke AI Integration</a>
+                <a href="#synergy">AI-Flutter Synergy</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <a href="#problem">The Bottleneck</a>
+                <a href="#cases">Case Studies</a>
+                <a href="#faq">Frequently Asked</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Get in Touch</h4>
+                <a href="mailto:info@mdlabs.io">info@mdlabs.io</a>
+                <a href="tel:+447366435065">+44 (7366) 435-065</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2026 MD Labs. All rights reserved.</p>
+                <div class="bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
